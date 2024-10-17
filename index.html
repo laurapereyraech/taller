@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Biblioteca Virtual</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-5">
+                <a class="nav-link active" aria-current="page" href="#">Novedades</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link" href="#">Autores</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link" href="#">Géneros</a>
+              </li>
+              <li class="nav-item mx-5 d-lg-none">
+                <button class="nav-link" id="optionsBtn">Opciones</button>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar libros" aria-label="Search">
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <div class="text-center my-5 d-none d-lg-block">
+        <h3>Explora nuestra colección de libros...</h3>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h5>“El amor en los tiempos del cólera” de Gabriel García Márquez: Una hermosa historia sobre el amor eterno.</h5>
+                </div>
+                <div class="carousel-item">
+                    <h5>“Cien años de soledad” también de Gabriel García Márquez: Un clásico de la literatura mágica.</h5>
+                </div>
+                <div class="carousel-item">
+                    <h5>“1984” de George Orwell: Una profunda reflexión sobre la vigilancia y la libertad.</h5>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mx-md-4 mx-sm-1">
+            <div class="col-lg-3 col-md-12 d-none d-lg-block" id="optionsMenu">
+                <div class="list-group">
+                    <button class="list-group-item list-group-item-action p-3"><a href="#" class="link-dark">Ficción</a></button>
+                    <button class="list-group-item list-group-item-action p-3"><a href="#" class="link-dark">No Ficción</a></button>
+                    <button class="list-group-item list-group-item-action p-3"><a href="#" class="link-dark">Clásicos</a></button>
+                    <button class="list-group-item list-group-item-action p-3"><a href="#" class="link-dark">Literatura Infantil</a></button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <p class="bg-light">Los libros son una ventana a mundos nuevos y emocionantes. Desde novelas cautivadoras hasta historias de no ficción que enriquecen nuestra mente.</p>
+                <p class="bg-light">Cada libro ofrece una experiencia única, permitiéndonos aprender, soñar y reflexionar sobre la vida.</p>
+                <p class="bg-light">No importa el género, siempre hay un libro esperando ser descubierto y apreciado por cada lector.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <p class="bg-light">La literatura clásica ha resistido la prueba del tiempo, ofreciendo historias que resuenan a través de generaciones.</p>
+                <p class="bg-light">Autores como Shakespeare, Cervantes y Tolstoy han dejado un legado literario que sigue inspirando a escritores y lectores por igual.</p>
+                <p class="bg-light">Descubre la magia de los clásicos y sumérgete en sus páginas para disfrutar de relatos inolvidables.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <p class="bg-light">Los libros de no ficción nos proporcionan conocimiento y perspectiva sobre el mundo que nos rodea.</p>
+                <p class="bg-light">Desde biografías hasta ensayos, cada página está llena de información valiosa y aprendizaje.</p>
+                <p class="bg-light">La lectura de no ficción enriquece nuestra vida, nos desafía a pensar y nos invita a cuestionar nuestra realidad.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
